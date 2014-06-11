@@ -1,0 +1,80 @@
+body{
+	/*background: ##00aa77;*/
+	background-image: url("zenbg-1.png"), url("zenbg-2.png");
+	background-repeat: repeat-x, repeat;
+}
+
+#top{
+	font-family: 'Indie Flower', cursive;
+	font-style: bold;
+	font-size: 40px;
+	color: white;
+}
+
+.container{
+	width: 600px;
+	margin: 0 auto;
+	border-style: solid;
+	border-color: black;
+	border-width: 1px;
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	-webkit-box-shadow: 13px 13px 12px 0px rgba(46, 50, 50, 0.74);
+	-moz-box-shadow:    13px 13px 12px 0px rgba(46, 50, 50, 0.74);
+	box-shadow:         13px 13px 12px 0px rgba(46, 50, 50, 0.74);
+
+}
+
+.pic{
+	border-style: solid;
+	border-color: red;
+	border-width: 1px;
+	width: 197px;
+	height: 197px;
+	/*overflow: hidden;*/
+	/*margin-right: -3px;*/
+	display: inline-block;
+	position: relative;
+}
+
+.pic:hover > .description{
+	z-index:2;
+	position: absolute;
+	-webkit-transform: rotateZ(5deg) scale(1.1,1.1) translateY(10%) translateX(20%);
+}
+
+.pic:hover > .picture{
+	z-index:3;
+}
+
+.description {
+	color: white;
+	font-family: 'Indie Flower', cursive;
+	text-align: center;
+	padding: 17px;
+	z-index: -1;
+	position: absolute;
+}
+
+.picture{
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	display: inline-block;
+	width: 197px;
+	height: 197px;
+	background-size: cover;
+
+}
+.picture:hover{
+	-webkit-transform: rotateZ(-15deg) scale(1.5,1.5) translateY(10%) translateX(-85%);
+	-webkit-transition-duration: 1s;
+
+	-webkit-box-shadow: 13px 13px 12px 0px rgba(46, 50, 50, 0.74);
+	-moz-box-shadow:    13px 13px 12px 0px rgba(46, 50, 50, 0.74);
+	box-shadow:         13px 13px 12px 0px rgba(46, 50, 50, 0.74);
+	
+
+}
